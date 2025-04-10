@@ -4,7 +4,7 @@ export default function LogoCompanies() {
   return (
     <section>
       <div className="w-full py-10 bg-[#052C4F]">
-        <div className="container mx-auto flex flex-wrap justify-center gap-6 px-4">
+        <div className="container mx-auto flex md:justify-around   flex-wrap justify-center gap-6 px-4">
           {["1.jpg", "2.jpg", "3.jpg", "4.png", "5.jpg"].map((img, i) => (
             <div
               key={i}

@@ -85,37 +85,41 @@ export default function Scomponent() {
         )}
       </Swiper>
 
-      {/* White Overlay (Responsive) */}
-      <div className="absolute top-0  left-0 h-full w-full bg-[#cfd5d3]/80 z-10"></div>
+      {/* White Overlay */}
+      <div className="absolute top-0 left-0 h-full w-full bg-[#cfd5d3]/80 z-10"></div>
 
-      {/* Content Overlay - Perfectly Centered */}
-      <div className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-20 w-full px-4">
-      <div className="max-w-5xl  mx-auto">
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold">
-            <span className="text-white">Tweetalig onderwijs</span>
-            <br className="hidden md:block"/>
+      {/* Content Overlay - Centered and Responsive */}
+      <div className="absolute top-1/2  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-20 w-full px-4 sm:px-6 md:px-8">
+        <div className="max-w-5xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">
+            <span className="text-white ">Tweetalig Onderwijs</span>
+            <br/><br className="lg:hidden" />
             <span className="text-[#b51310]">IVS Alliance</span>
           </h1>
-          <p className="text-lg lg:text-lg font-semibold md:py-28 lg:py-6 py-12 md:text-xl mt-4">
-          Education is the best most powerful weapon we can use to change <br className="hidden md:block"/> the world.
+          <p className="text-base sm:text-lg md:text-xl font-semibold py-4 sm:py-6 md:py-8 lg:py-6">
+            Education is the best most powerful weapon we can use to change{" "}
+            <br className="hidden md:block" /> the world.
           </p>
-          <div className='md:flex md:space-x-4 flex-row gap-y-3 items-center justify-center'>
-          <button className="bg-[#b51310]  text-sm  text-white items-center px-6 py-3 mt-8 rounded-lg hover:bg-red-600 transition">
-          FOR TEACHERS
-           <span className='text-sm  ps-[2px] font-bold'>&gt;</span> 
-          </button>
-          <button className="bg-[#b51310]  text-sm  text-white items-center px-6 py-3 mt-8 rounded-lg hover:bg-red-600 transition">
-          FOR STUDENTS   <span className='text-sm  ps-[2px] font-bold'>&gt;</span> 
-          </button>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 mt-4 sm:mt-6">
+            <button className="bg-[#b51310] text-sm text-white items-center px-6 py-3 rounded-lg hover:bg-red-600 transition w-full sm:w-auto">
+              FOR TEACHERS
+              <span className="text-sm ps-[2px] font-bold">&gt;</span>
+            </button>
+            <button className="bg-[#b51310] text-sm text-white items-center px-6 py-3 rounded-lg hover:bg-red-600 transition w-full sm:w-auto">
+              FOR STUDENTS <span className="text-sm ps-[2px] font-bold">&gt;</span>
+            </button>
           </div>
         </div>
       </div>
 
-      {/* Add some global styles to make the pagination visible */}
+      {/* Pagination styles */}
       <style jsx global>{`
         .pagination-visible .swiper-pagination {
           position: absolute;
-          bottom: 20px !important;
+          bottom: 10px !important;
+          @media (min-width: 640px) {
+            bottom: 20px !important;
+          }
           left: 0;
           width: 100%;
           display: flex;
@@ -126,8 +130,12 @@ export default function Scomponent() {
           background: black !important;
           opacity: 100;
           margin: 0 4px;
-          width: 16px;
-          height: 16px;
+          width: 10px;
+          height: 10px;
+          @media (min-width: 640px) {
+            width: 16px;
+            height: 16px;
+          }
           display: inline-block;
           border-radius: 50%;
         }
