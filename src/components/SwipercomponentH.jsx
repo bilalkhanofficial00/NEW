@@ -91,7 +91,7 @@ export default function Scomponent() {
       {/* Content Overlay - Centered and Responsive */}
       <div className="absolute top-1/2  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-20 w-full px-4 sm:px-6 md:px-8">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">
+          <h1 className="text-5xl  md:text-6xl lg:text-7xl xl:text-8xl font-bold">
             <span className="text-white ">Tweetalig Onderwijs</span>
             <br/><br className="lg:hidden" />
             <span className="text-[#b51310]">IVS Alliance</span>
