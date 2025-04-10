@@ -4,7 +4,7 @@ export default function AboutUsPageFull() {
       {/* Header Banner */}
       <div className="bg-gray-100 py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-2">About IVS Alliance</h1>
+          <h1 className="text-4xl font-bold mb-2">Tweetali gonderwijs IVS Alliance</h1>
           <p className="text-xl text-gray-600">
             Transforming education through global bilingual learning initiatives
           </p>
@@ -19,13 +19,10 @@ export default function AboutUsPageFull() {
               WHO WE ARE
             </h2>
             <h3 className="text-3xl font-bold mb-6">
-              We are Passionate for Providing Students Bilingual Education
+            We care about our students and teachers.
             </h3>
             <p className="mb-4 text-gray-700">
-              Together with the IVS Alliance we open new doors for our students
-              in the Netherlands. We offer them bilingual education in sectors
-              like business, hospitality, fashion, wholesale, management etc.
-              The bilingual program ensures a diploma (equivalent to A-level).
+            Crossing borders is in the IVS Alliance genes. From day one the members try to be one step ahead. Offering classes in English, a double diploma program and internships abroad. All initiated by IVS Alliance members. What will be our next crossing?
             </p>
             <p className="mb-4 text-gray-700">
               Crossing borders is in the IVS Alliance genes. From day one the
@@ -80,11 +77,12 @@ export default function AboutUsPageFull() {
                 </svg>
               </div>
               <div>
-                <h3 className="font-bold text-lg">
-                  Connecting Teachers Globally
+                <h3 className="font-bold uppercase text-lg">
+                connecting teachers
+
                 </h3>
                 <p className="text-gray-600">
-                  168 companies in 24 countries use our methods
+                The IVS Alliance connect teachers from different schools that offer bilingual education. Through meetings and online platforms we stay in contact to enhance personal and professional contact.
                 </p>
               </div>
             </div>
@@ -107,10 +105,9 @@ export default function AboutUsPageFull() {
                 </svg>
               </div>
               <div>
-                <h3 className="font-bold text-lg">New developments</h3>
+                <h3 className="font-bold uppercase text-lg">sharing knowledge</h3>
                 <p className="text-gray-600">
-                  8 billion products are produced daily from our learning
-                  resources
+                The IVS Alliance shares knowledge to further develop quality education. Teachers, students and entrepreneurs share ideas, best practices, learning materials and inspiration.
                 </p>
               </div>
             </div>
@@ -133,12 +130,11 @@ export default function AboutUsPageFull() {
                 </svg>
               </div>
               <div>
-                <h3 className="font-bold text-lg">
-                  We touch 850 million people a day
+                <h3 className="font-bold uppercase text-lg">
+                New developments
                 </h3>
                 <p className="text-gray-600">
-                  850 million people use products made by their education every
-                  day
+                Together we develop new programs and materials for students and teachers. Each school uses these programs and materials for their own benefit in a way that fits their college.
                 </p>
               </div>
             </div>
@@ -147,7 +143,7 @@ export default function AboutUsPageFull() {
 
         {/* Our Values Section */}
         <div className="mt-16 pt-16 border-t border-gray-200">
-          <h2 className="text-3xl font-bold mb-10 text-center">
+          <h2 className="text-3xl capitalize font-bold mb-10 text-center">
             Our Core Values
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -168,10 +164,9 @@ export default function AboutUsPageFull() {
                   />
                 </svg>
               </div>
-              <h3 className="font-bold text-xl mb-3">Global Perspective</h3>
+              <h3 className="font-bold text-xl capitalize mb-3"> The path we want to take with our journey</h3>
               <p className="text-gray-600">
-                We believe in education that crosses borders and unites
-                cultures, preparing students for an international future.
+              The mission of the IVS Alliance is to grant support requests from teachers within the BTEC program to enable them to matter to students and entrepreneurs. The IVS Alliance trains, engages and inspires members.
               </p>
             </div>
 
@@ -192,10 +187,9 @@ export default function AboutUsPageFull() {
                   />
                 </svg>
               </div>
-              <h3 className="font-bold text-xl mb-3">Innovation</h3>
+              <h3 className="font-bold capitalize text-xl mb-3">How we see our role</h3>
               <p className="text-gray-600">
-                We constantly seek new ways to improve education and stay one
-                step ahead in preparing students for future challenges.
+              The IVS Alliance wants to collectively support bilingual vocational colleges to improve the opportunities for their students.
               </p>
             </div>
 

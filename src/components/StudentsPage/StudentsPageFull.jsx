@@ -9,9 +9,9 @@ export default function StudentsPageFull() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:flex lg:items-center lg:justify-between">
             <div className="lg:w-2/3">
-              <h1 className="text-4xl font-bold text-gray-900 mb-4">Empowering Students Through Bilingual Education</h1>
+              <h1 className="text-4xl font-bold text-gray-900 mb-4">Students and alumni of bilingual education</h1>
               <p className="text-lg text-gray-700 mb-6">
-                Join our global community of learners and gain an internationally recognized diploma while developing fluency in multiple languages.
+              Stories of our students and alumni (graduated from BTEC) in the Netherlands.
               </p>
               <div className="flex space-x-4">
                 <button className="bg-red-700 hover:bg-red-800 text-white px-6 py-3 rounded-md font-medium">
@@ -39,9 +39,9 @@ export default function StudentsPageFull() {
       <div className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">Our Bilingual Programs</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Schools teaching BTEC programs</h2>
             <p className="mt-4 text-lg text-gray-600">
-              Discover opportunities in various sectors with our A-level equivalent diploma programs
+            Here you can find an overview of schools (member of the IVS Alliance) that teaches different BTEC programs in different cities in the Netherlands. 
             </p>
           </div>
 

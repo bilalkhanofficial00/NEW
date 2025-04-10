@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FaPhone } from "react-icons/fa";
+import { FaPhone, FaLinkedinIn, FaInstagram, FaTwitter, } from "react-icons/fa";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 
 export default function Footer() {
@@ -11,7 +11,12 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
           <div>
             <h3 className="text-xl font-light mb-1">Have a any questions?</h3>
-            <h2 className="text-2xl font-semibold">Contact Us</h2>
+            <h2 className="text-2xl my-2 font-semibold">Contact Us</h2>
+            <div>
+              <p>MON - FRI: 10:00 - 19:00﻿</p>
+              <p>SAT 09:00 - 20:00</p>
+              <p>SUN 09:00 - 14:00</p>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 md:mt-0">
@@ -31,6 +36,7 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-full bg-[#0c2745] flex items-center justify-center border border-gray-500">
                 <MdEmail className="text-white text-lg" />
               </div>
+             
               <div>
                 <p className="text-xs text-gray-300">E-Mail Address</p>
                 <p className="text-sm">hello@crosson.com</p>
@@ -66,28 +72,33 @@ export default function Footer() {
             <h3 className="text-xl mb-4">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
+                <Link href="/" className="text-gray-300 hover:text-white">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
+                <Link href="/about-Us" className="text-gray-300 hover:text-white">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
+                <Link href="/Students" className="text-gray-300 hover:text-white">
                   Student
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
+                <Link href="/Teachers" className="text-gray-300 hover:text-white">
                   Teacher
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
+                <Link href="/contact-Us" className="text-gray-300 hover:text-white">
                   Contact
+                </Link>
+              </li>
+              <li>
+                <Link href="/Member" className="text-gray-300 hover:text-white">
+                Members
                 </Link>
               </li>
             </ul>
@@ -129,38 +140,16 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* News */}
-          <div>
-            <h3 className="text-xl mb-4">News</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
-                  Latest News 1
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
-                  Latest News 3
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
-                  Latest News 3
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
-                  Latest News 4
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
-                  Latest News 5
-                </Link>
-              </li>
-            </ul>
-          </div>
+         <div className="flex-row md:space-y-8 space-y-4">
+          <div  className="flex gap-x-8">
+          <FaLinkedinIn className="cursor-pointer" />
+            <FaInstagram className="cursor-pointer" />
+            <FaTwitter className="cursor-pointer" />
+            </div>
+            <div>
+            Follow us on social media to see more about the IVS Alliance. Don't hesitate to contact us!
+            </div>
+            </div>
 
           {/* Career Opportunities */}
           <div className="md:col-span-3 lg:col-span-1">

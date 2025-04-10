@@ -48,104 +48,95 @@ export default function OASComponent() {
 
   return (
     <div className="relative w-full bg-white py-12">
-      <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-2xl font-bold mb-12 text-[#b51310] px-4 md:px-8 lg:px-16">
-          Our Ambassadors
-        </h2>
-
-        <Swiper
-          slidesPerView={1}
-          pagination={{
-            clickable: true,
-            horizontalClass: "swiper-pagination-horizontal",
-            bulletClass: "swiper-pagination-bullet",
-            bulletActiveClass: "swiper-pagination-bullet-active",
-          }}
-          loop={true}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          modules={[Pagination, Autoplay]}
-          className="ambassador-swiper"
-        >
-          {ambassadors.map((ambassador, index) => (
-            <SwiperSlide key={index}>
-              <div className="px-4 md:px-8 lg:px-16 flex flex-col md:flex-row items-start md:items-center gap-8 mb-8">
-                {/* Ambassador Image */}
-                <div className="flex-shrink-0">
-                  <div className="w-32 h-32 rounded-full overflow-hidden relative border-2 border-gray-200">
-                    <Image
-                      src={ambassador.image}
-                      alt={`Photo of ${ambassador.name}`}
-                      layout="fill"
-                      objectFit="cover"
-                      className="rounded-full"
-                    />
-                  </div>
+    <div className="container mx-auto px-4 relative z-10">
+      <h2 className="text-2xl font-bold mb-2 text-[#b51310] px-4 md:px-8 lg:px-16">Our Ambassadors</h2>
+      <p className=" font-bold mb-12  px-4 md:px-8 lg:px-16">Don't take our word for it - here's what some of our students, alumni and teachers say: </p>
+      
+      <Swiper
+        slidesPerView={1}
+        pagination={{
+          clickable: true,
+          horizontalClass: 'swiper-pagination-horizontal',
+          bulletClass: 'swiper-pagination-bullet',
+          bulletActiveClass: 'swiper-pagination-bullet-active',
+        }}
+        loop={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination, Autoplay]}
+        className="ambassador-swiper"
+      >
+        {ambassadors.map((ambassador, index) => (
+          <SwiperSlide key={index}>
+            <div className="px-4 md:px-8 lg:px-16 flex flex-col md:flex-row items-start md:items-center gap-8 mb-8">
+              {/* Ambassador Image */}
+              <div className="flex-shrink-0">
+                <div className="w-32 h-32 rounded-full overflow-hidden relative border-2 border-gray-200">
+                  <Image 
+                    src={ambassador.image}
+                    alt={`Photo of ${ambassador.name}`}
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-full"
+                  />
                 </div>
-
-                {/* Quote and Info */}
-                <div className="flex-grow">
-                  <div className="relative">
-                    {/* Quote mark */}
-                    <div className="text-4xl font-serif text-gray-300 absolute -top-5 left-0">
-                      &ldquo;
-                    </div>
-
-                    {/* Quote text */}
-                    <p className="text-base text-gray-700 pl-6 pr-4 leading-relaxed mb-4">
-                      {ambassador.quote}
-                    </p>
-
-                    {/* Ambassador name and title */}
-                    <div className="text-right">
-                      <h3 className="text-xl font-bold mb-1">
-                        {ambassador.name}
-                      </h3>
-                      <p className="text-sm text-gray-600">
-                        {ambassador.title}
-                      </p>
-                      <p className="text-sm text-gray-600">
-                        {ambassador.institution}
-                      </p>
-                    </div>
+              </div>
+              
+              {/* Quote and Info */}
+              <div className="flex-grow">
+                <div className="relative">
+                  {/* Quote mark */}
+                  <div className="text-4xl font-serif text-gray-300 absolute -top-5 left-0">&ldquo;</div>
+                  
+                  {/* Quote text */}
+                  <p className="text-base text-gray-700 pl-6 pr-4 leading-relaxed mb-4">
+                    {ambassador.quote}
+                  </p>
+                  
+                  {/* Ambassador name and title */}
+                  <div className="text-right">
+                    <h3 className="text-xl font-bold mb-1">{ambassador.name}</h3>
+                    <p className="text-sm text-gray-600">{ambassador.title}</p>
+                    <p className="text-sm text-gray-600">{ambassador.institution}</p>
                   </div>
                 </div>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-
-      {/* Add global styles for pagination */}
-      <style jsx global>{`
-        .ambassador-swiper {
-          padding-bottom: 40px;
-        }
-        .swiper-pagination {
-          position: absolute;
-          bottom: 0 !important;
-          left: 0;
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          z-index: 30;
-        }
-        .swiper-pagination-bullet {
-          background: #999;
-          opacity: 0.5;
-          margin: 0 3px;
-          width: 8px;
-          height: 8px;
-          display: inline-block;
-          border-radius: 50%;
-        }
-        .swiper-pagination-bullet-active {
-          opacity: 1;
-          background: #333;
-        }
-      `}</style>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
+    
+    {/* Add global styles for pagination */}
+    <style jsx global>{`
+      .ambassador-swiper {
+        padding-bottom: 40px;
+      }
+      .swiper-pagination {
+        position: absolute;
+        bottom: 0 !important;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 30;
+      }
+      .swiper-pagination-bullet {
+        background: #999;
+        opacity: 0.5;
+        margin: 0 3px;
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        border-radius: 50%;
+      }
+      .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #333;
+      }
+    `}</style>
+  </div>
   );
 }

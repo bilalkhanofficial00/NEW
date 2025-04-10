@@ -90,19 +90,24 @@ export default function Scomponent() {
 
       {/* Content Overlay - Perfectly Centered */}
       <div className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-20 w-full px-4">
-        <div className="max-w-4xl  mx-auto">
+      <div className="max-w-5xl  mx-auto">
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold">
-            <span className="text-white">IVS</span>{" "}
-            <span className="text-[#b51310]">Alliance</span>
+            <span className="text-white">Tweetalig onderwijs</span>
+            <br className="hidden md:block"/>
+            <span className="text-[#b51310]">IVS Alliance</span>
           </h1>
           <p className="text-lg lg:text-lg font-semibold md:py-28 lg:py-6 py-12 md:text-xl mt-4">
-            Education is the best most powerful weapon we can use to change
-            <br className="hidden md:block" /> the world.
+          Education is the best most powerful weapon we can use to change <br className="hidden md:block"/> the world.
           </p>
-          <button className="bg-[#b51310] text-sm  text-white items-center px-6 py-3 mt-8 rounded-md hover:bg-red-600 transition">
-            Become Member{" "}
-            <span className="text-sm ps-[2px] font-bold">&gt;</span>
+          <div className='md:flex md:space-x-4 flex-row gap-y-3 items-center justify-center'>
+          <button className="bg-[#b51310]  text-sm  text-white items-center px-6 py-3 mt-8 rounded-lg hover:bg-red-600 transition">
+          FOR TEACHERS
+           <span className='text-sm  ps-[2px] font-bold'>&gt;</span> 
           </button>
+          <button className="bg-[#b51310]  text-sm  text-white items-center px-6 py-3 mt-8 rounded-lg hover:bg-red-600 transition">
+          FOR STUDENTS   <span className='text-sm  ps-[2px] font-bold'>&gt;</span> 
+          </button>
+          </div>
         </div>
       </div>
 

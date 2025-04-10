@@ -38,7 +38,8 @@ export default function ContactUsPageFull() {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-2">Contact Us</h1>
           <p className="text-gray-600">
-            Get in touch with the IVS Alliance team
+          Got a question or a request? We’d love to hear from you. Send us a message by using the contact form and we’ll respond as soon as possible. 
+m
           </p>
         </div>
       </div>
@@ -139,6 +140,12 @@ export default function ContactUsPageFull() {
                 <h3 className="font-semibold text-lg mb-2">Head Office</h3>
                 <p className="text-gray-700 mb-1">Rijswijkseweg 60</p>
                 <p className="text-gray-700 mb-1">2516 EH The Hague</p>
+                <p className="text-gray-700">The Netherlands</p>
+              </div>
+              <div className="mb-6">
+                <h3 className="font-semibold text-lg mb-2">Address</h3>
+                <p className="text-gray-700 mb-1">Zijlweg 203</p>
+                <p className="text-gray-700 mb-1">2015 CK, Haarlem</p>
                 <p className="text-gray-700">The Netherlands</p>
               </div>
 
